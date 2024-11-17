@@ -1,0 +1,65 @@
+/* Global Reset */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .sign-up-page {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .form-section {
+    flex: 1;
+    background: linear-gradient(to bottom, #dcb072, #f8d4a1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .form-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  
+  .form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form button {
+    background-color: #ff6c00;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .image-section {
+    flex: 1;
+    background: url('work.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: auto;
+    display: none; /* Add this if you prefer using background */
+  }
+  
