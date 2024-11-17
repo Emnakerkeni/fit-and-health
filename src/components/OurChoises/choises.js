@@ -18,7 +18,7 @@ function Choices() {
   return (
     <div className="app">
       <header className="header">
-        <img src="your-logo-url" alt="Logo" className="logo" />
+       
       </header>
 
       <main className="main-content">

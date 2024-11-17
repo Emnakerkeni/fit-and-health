@@ -1,16 +1,21 @@
 // App.js
 import React from 'react';
-import SignUpPage from './components/signUp/SignUpPage'; // Adjust path based on your file structure
-import './App.css'; // Optional: Add global styles
-import Choices from './components/OurChoises/choises'; // Capitalize Choices
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // Import Router components
+import SignUpPage from './components/signUp/SignUpPage'; 
+import Choices from './components/OurChoises/choises'; 
+import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <SignUpPage />
-      <choices />
-  
-    </div>
+    <Router>
+      <div className="App">
+        {/* Define Routes */}
+        <Routes>
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/choices" element={<Choices />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
