@@ -1,22 +1,21 @@
-import React from "react";
-import "./styles/App.css"; // Importation du fichier CSS
-import SignInForm from "./components/SignInForm";
-import fitnessImage from "./assets/fitness.jpg";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SignUpPage from './components/SignUpPage';
+import Choices from './components/Choices';
+import SignInForm from './components/SignInForm';
+import LifestyleForm from './components/LifestyleForm';
 
 function App() {
   return (
-    <div className="app-container">
-      <div className="image-section">
-        <img src={fitnessImage} alt="Fitness" className="fitness-image" />
-      </div>
-      <div className="form-section">
-        <SignInForm />
-      </div>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/choices" element={<Choices />} />
+        <Route path="/signin" element={<SignInForm />} />
+        <Route path="/lifestyle" element={<LifestyleForm />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
-
-
-
